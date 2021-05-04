@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Juego de memoria</title>
+  </head>
+  <body id="index">
+    <audio src="audios/cerebro.wav" autoplay></audio>
+    <audio id="ouh" src="audios/ouh.wav" ></audio>
+    <audio id="nerd" src="audios/ay-caramba.mp3" ></audio>
+    <script src="js/tablero.js"></script>
+
+    <div class="window-lose" id="vent-perdedor">
+      <button>
+        <span>JUEGA OTRA VEZ</span>
+      </button>
+    </div>
+
+    <div class="window-winner" id="vent-ganador">
+      <button>
+        <span>JUEGA OTRA VEZ</span>
+      </button>
+    </div>
+
+    <div class="board-score">
+      <div class="score">
+        <span>PUNTAJE</span>
+        <div id="puntos">0</div>
+      </div>
+
+      <div class="tried">
+        <span>INTENTOS</span>
+        <div id="error">0</div>
+      </div>
+    </div>
+
+    <div class="window-game" id="vent-juego">
+      <P>Tienes solo 5 intentos</P>
+      <p>Vamos a intentarlo!</p>
+      <button>
+        <span>STAR GAME</span>
+      </button>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/juego-memoria.js"></script>
+  </body>
+</html>
